@@ -1,0 +1,20 @@
+<!doctype html>
+<script src="code/game.js"></script>
+<script src="code/game_levels.js"></script>
+
+<link rel="stylesheet" href="css/game.css">
+
+<body>
+<audio autoplay id="overworld" src="overworld.ogg"></audio>
+<audio id="coin" src="coin.mp3" style="display: none;"></audio>
+<audio id="death" src="death.mp3" style="display: none;"></audio>
+<audio id="jump" src="jump.mp3" style="display: none;"></audio>
+<audio id="dogJump" src="dog.mp3" style="display: none;"></audio>
+<audio id="lose" src="losesong.mp3" style="display: none;"></audio>
+<audio id="win" src="winsong.mp3" style="display: none;"></audio>
+<script id="game">
+    runGame(GAME_LEVELS, DOMDisplay);
+</script>
+<div id="winscreen" class="winscreen"></div>
+<div id="losescreen" class="losescreen"></div>
+</body>
